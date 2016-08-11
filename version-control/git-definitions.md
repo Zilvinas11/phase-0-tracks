@@ -9,7 +9,11 @@ Is a managment of changes to documents. It allows for calaberation between diffr
 Branch is a coppy of a master document. It allows for somone to work on the file seperatly. All the changes could be merged back in the master.
 
 * What is a commit? What makes a good commit message?
+<<<<<<< HEAD
 When changes are made to the file in a branch, commit is used to note those changes. A good message would infor other people of changes that have been made. 
 
 * What is a merge conflict?
 It happens when there are two changes to the the same file and Git does not know which is the correct change.
+=======
+* What is a 
+>>>>>>> verstion_2
