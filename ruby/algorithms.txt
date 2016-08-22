@@ -13,3 +13,22 @@
 -head out when robot reaches the selected floor.
 -haed out without colliding using absticle avoidance
 
+
+(brush my teeth)
+-go to bathroom
+-find a toothbrush
+-find a sink 
+-turn wather on 
+-rinse the toothbrush
+-find a toothpaste 
+-put the toothpaste on a brush
+-put down the toothpaste
+-get the toothbrush in your mouth so that the burshes are on the teeth. 
+-do the brushing motion all arround.
+-risse the toothbrush
+-put the toothbrush back
+-get spit out the paste.
+-put some water in my mounth
+-rinse the mouth with water 
+-spit out the access.
+-
