@@ -1,0 +1,15 @@
+-go to the elevator
+-avoid/ obsticles (do not crash)
+-once fully inside turn the ditecting sensors (camera) thourdes the door
+-ditect the controlls pannel (object ditect pattern regugnition)
+-use image to identify the numbers and there location
+- use the data base do find a "log" with input value regarding which floor to select
+- fiure out a path for an arm to press the button.
+-initiate the command.
+-constantly check if there are any other objects in he path (collition ditection)
+-once it gets closers start reading a sensor value so the press could indentify when button is pushed in (if we still use buttons)
+- retract the arm to its normal postion.
+-afterwards scann for a panel which showes which floor you are in and identify the numbers.
+-head out when robot reaches the selected floor.
+-haed out without colliding using absticle avoidance
+
