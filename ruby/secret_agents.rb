@@ -1,6 +1,11 @@
-# create a method 
-#   so it would next letter forward
-# 
+#ask the user
+#get user input on encrypt and decrypt
+#if encrypt, run encrypt method
+#if decrypt, run decrypt method
+#ask the user for password
+#get user password and call method based on that password
+#print results to screen
+#exit program
 
 def encrypt(word)
 index = 0
@@ -12,7 +17,7 @@ end
 return word
 end
 
- puts encrypt("abcdef")
+ #puts encrypt("abcdef")
 
 
 
@@ -31,6 +36,20 @@ end
 return word
 end
 
- puts decrypt("bcd")
+ #puts decrypt("bcd")
 
- decrypt(encrypt("swordfish"))
+#puts decrypt(encrypt("swordfish")) -- this worked because we were able to call our encrypt method on the word "swordfish" and use that value to call the decrypt method. We got the word "Swordfish" as our result.
+
+puts "Would you like to encrypt or decrypt a password?"
+choice = gets.chomp
+
+puts "What would you like your password to be?"
+password = gets.chomp
+
+if choice == "encrypt"
+	puts encrypt(password)
+else
+	puts decrypt(password)
+end
+
+
