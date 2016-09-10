@@ -1,5 +1,3 @@
-
-
 class Santa
 	attr_reader :age, :ethnicity
 	attr_accessor :gender
@@ -7,7 +5,7 @@ class Santa
 		@gender=gender
 		@ethnicity=ethnicity
 		@reindeer_ranking=["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
-		@age=0
+		@age=rand(0...140)
 	end
 	def speak
 		puts "Ho, ho, ho! Haaaappy holidays! #{@age}"
@@ -15,10 +13,7 @@ class Santa
 	def eat_milk_and_cookies(type) 
 		puts "That was a good #{type}!"
 	end
-    def about
-    	puts "#{@gender} #{@ethnicity}  #{@reindeer_ranking} " 
-    end
-
+    
     def celebrate_birthday
     	@age = @age+1
     end
@@ -28,10 +23,14 @@ class Santa
     	a.delete(name)
     	a.push(name)
 	end
-	
 
+	def about
+    	puts " Santas gender:#{@gender}, ethnicity #{@ethnicity}, reindeer_ranking:#{@reindeer_ranking}, age: #{@age} " 
+    end
 
 end
+
+
 a = Santa.new("ne","me")
 
 a.eat_milk_and_cookies("dark")
@@ -40,15 +39,12 @@ a.about
 
 puts "now the array"
 
+
 santas = []
 example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
 example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
-example_genders.length.times do |i|
-  santas << Santa.new(example_genders[i], example_ethnicities[i])
-end
 
-santas[2].about
-#santas.eat_milk_and_cookies
+
 
 a.celebrate_birthday
 
@@ -58,3 +54,15 @@ p a.gender="she male"
 
 puts "age: #{a.age}  Ethnicity #{a.ethnicity}"
 
+#reliese 4
+i=0
+until i==50
+
+  santas << Santa.new(example_genders.sample, example_ethnicities.sample)
+  i=i+1
+end
+
+santas.length.times do |i|
+
+santas[i].about
+end
