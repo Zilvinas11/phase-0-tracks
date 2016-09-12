@@ -25,10 +25,9 @@ end
 
 def add_item(hash,item,num)
 	
-
-	h=hash.merge({:"#{item}" => num})
-
-	return h
+	h2 = { "#{item}" => num}
+	hash.merge!(h2) 
+	return hash
 end
 
 
@@ -39,8 +38,8 @@ end
 def remove(hash)
 	puts "What item would you like to remove?"
 	item=gets.chomp
-	h= hash.delete("#{item}") 
-	return h
+	hash.delete("#{item}") 
+	return hash
 end
 
 
@@ -53,8 +52,10 @@ def update(hash)
 	item=gets.chomp
 	puts "The new quantity?"
 	num=gets.chomp
-	h=hash["#{item}"]=num
-	return h
+	h2 = { "#{item}" => num}
+	hash.merge!(h2) 
+	return hash
+	
 end 	
 
 
