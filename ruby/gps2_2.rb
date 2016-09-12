@@ -19,9 +19,9 @@ def list(items)
 end
 
 # Method to add an item to a list
-# input: item name and optional quantity
-# steps:
-# output:
+# input: item na me and optional quantity
+# steps:  created a new hash and merge it to the old one
+# output: hash
 
 def add_item(hash,item,num)
 	
@@ -32,9 +32,9 @@ end
 
 
 # Method to remove an item from the list
-# input:
-# steps:
-# output:
+# input: hash
+# steps: asked user for the item, delted it form the hash
+# output: hash
 def remove(hash)
 	puts "What item would you like to remove?"
 	item=gets.chomp
@@ -44,9 +44,9 @@ end
 
 
 # Method to update the quantity of an item
-# input:
-# steps:
-# output:
+# input: hash
+# steps:asked user for item and number, created a new hash and merge it to the old one
+# output: hash
 def update(hash)
 	puts "Whichs itme's quantity would you like to update?"
 	item=gets.chomp
@@ -60,9 +60,9 @@ end
 
 
 # Method to print a list and make it look pretty
-# input:
-# steps:
-# output:
+# input: hash
+# steps: go throug each hash value and print it
+# output: none
 def print(hash)
 	hash.each do |key, value|
     puts "Item: #{key} Quantity: #{value}"
@@ -116,4 +116,19 @@ while num_items != index
 index  = index +1
 end
 
+puts "Very nice looking!!"
 print(hash)
+
+
+#What did you learn about pseudocode from working on this challenge? 
+# 	it can be very helful if it is used correclty.
+#What are the tradeoffs of using arrays and hashes for this challenge?
+#   arrays could less complicated compared to hashes but hashes are a lot more convient to work with
+#What does a method return?
+# 	I do not get the question. It can return what ever your little hart desiers?
+#What kind of things can you pass into methods as arguments?
+#    global varables, integers, strings ect ? I do not get the question 
+#How can you pass information between methods?
+# 	I like attributes when using class, but in this chellegne i used driver code and allways rewrote the code because it was esier for me to read
+#What concepts were solidified in this challenge, and what concepts are still confusing?
+#   It would have been nice to see what other ways thi could have been done.
