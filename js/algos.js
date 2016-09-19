@@ -30,7 +30,7 @@ return value;
 test(arr);
 console.log(test(arr));
 
-console.log(test(arr_1));
+//console.log(test(arr_1));
 
 
 
@@ -63,18 +63,19 @@ console.log(long_word(val,val_2));
 
 // release 3
 
-	// builds an array out of strings lenght 
+	// 3.1builds an array out of strings lenght 
 
 	    var text='';
     var possible = "abcdefghijklmnopqrstuvwxyz";
 
    
-   var arr_result=[];
+   
 
 
  function random(string){
+ 	 var arr_result=[];
   for (var n = 0; n < string; n++){
-  	
+ 	
   	text='';
   for (var i = 0; i < Math.floor((Math.random() * 10) + 1); i++){ 
   	
@@ -86,8 +87,67 @@ console.log(long_word(val,val_2));
    
 		arr_result.push(text);
 }
-console.log(arr_result);
 
+return arr_result;
 }
 
-random("3")
+
+console.log(random("3"));
+console.log(random("5"));
+	//3.2 generates an array, prints the array, feeds the array to your "longest word" function, and prints the result.
+ /// I ran out of time to build loop so I just stuck with what works !!!
+
+
+
+tor_1 = random(Math.floor((Math.random() * 5) + 1));
+console.log(tor_1);
+console.log(test(tor_1))
+
+tor_2 = random(Math.floor((Math.random() * 5) + 1));
+console.log(tor_2);
+console.log(test(tor_2))
+
+tor_3 = random(Math.floor((Math.random() * 5) + 1));
+console.log(tor_3);
+console.log(test(tor_3))
+
+tor_4 = random(Math.floor((Math.random() * 5) + 1));
+console.log(tor_4);
+console.log(test(tor_4))
+
+
+tor_5 = random(Math.floor((Math.random() * 5) + 1));
+console.log(tor_5);
+console.log(test(tor_5))
+
+tor_10 = random(Math.floor((Math.random() * 5) + 1));
+console.log(tor_10);
+console.log(test(tor_10))
+
+tor_6 = random(Math.floor((Math.random() * 5) + 1));
+console.log(tor_6);
+console.log(test(tor_6))
+
+tor_7 = random(Math.floor((Math.random() * 5) + 1));
+console.log(tor_7);
+console.log(test(tor_7))
+
+tor_8 = random(Math.floor((Math.random() * 5) + 1));
+console.log(tor_8);
+console.log(test(tor_8))
+
+tor_9 = random(Math.floor((Math.random() * 5) + 1));
+console.log(tor_9);
+console.log(test(tor_9))
+
+
+tor_10 = random(Math.floor((Math.random() * 2) + 1));
+console.log(tor_10);
+console.log(test(tor_10))
+
+	// store_arr.push(random(Math.floor((Math.random() * 2) + 1)));
+
+//console.log(store_arr);
+	//console.log(test(store_arr[i]));
+	
+
