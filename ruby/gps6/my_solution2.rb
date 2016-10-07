@@ -17,12 +17,13 @@ class VirusPredictor
   end
 
   def virus_effects
-    predicted_deaths
-    speed_of_spread
+   
+    puts "#{@state} will lose #{predicted_deaths} people in this outbreak and will spread across the state in #{speed_of_spread} months.\n\n"
+ 
 
-    
   end
 
+#It protects from user modifing methods and it is only beeing called insde the class.
   private
 
   def predicted_deaths
@@ -38,8 +39,7 @@ class VirusPredictor
     else
       number_of_deaths = (@population * 0.05).floor
     end
-
-    print "#{@state} will lose #{number_of_deaths} people in this outbreak"
+  
 
   end
 
@@ -60,8 +60,7 @@ class VirusPredictor
       speed += 2.5
     end
 
-    puts " and will spread across the state in #{speed} months.\n\n"
-
+   
   end
 
 end
@@ -97,3 +96,19 @@ end
 
 #=======================================================================
 # Reflection Section
+
+#What are the differences between the two different hash syntaxes shown in the state_data file?
+#the key value is defined diffrently. One is defiend as a string and the other two are located inside the value as a hash
+
+#What does require_relative do? How is it different from require?
+#require relatevie is a short cut to acess files if the files are in the same directory. require requires a path to be specified.
+
+#What are some ways to iterate through a hash?
+#As the way we did above we iterate STATE_DATA suing .each block method and accesed values thorugh key and value.
+
+#When refactoring virus_effects, what stood out to you about the variables, if anything?
+#Well the method inside the privete did not use the input values. They were useding attribute.
+
+
+#What concept did you most solidify in this challenge?
+#I think this assigment was fun because I was able to dive in deaper. 
